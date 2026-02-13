@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDO - Encuesta de Satisfacción</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- ICONOS REDES SOCIALES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div id="loaderOverlay">
+  <div class="logoRow">
+    <div class="loader"><div class="dot"></div>
+      <svg viewBox="0 0 100 100"><path d="M10 90 V10 L50 60 L90 10 V90"/></svg>
+    </div>
+    <div class="loader"><div class="dot"></div>
+      <svg viewBox="0 0 100 100"><path d="M20 10 H55 A25 25 0 0 1 55 90 H20 Z"/></svg>
+    </div>
+    <div class="loader"><div class="dot"></div>
+      <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="35"/></svg>
+    </div>
+  </div>
+  <div class="loadingText">LOADING</div>
+</div>
+
+<div class="app">
+  <div class="left">
+    <img src="https://mdodentaltraining.org/wp-content/uploads/2026/02/Criterio-clinico.jpg">
+
+    <!-- CONTENEDOR REAL DE REDES -->
+    <div class="social-glass">
+      <div class="social-container">
+        <a href="https://www.facebook.com/MDO.DentalTrainingCenter" target="_blank" class="social-card facebook">
+          <span class="tooltip">Facebook</span>
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@mdodentaltrainingcenter" target="_blank" class="social-card tiktok">
+          <span class="tooltip">TikTok</span>
+          <i class="fab fa-tiktok"></i>
+        </a>
+
+        <a href="https://www.instagram.com/mdodentaltrainingcenter/" target="_blank" class="social-card instagram">
+          <span class="tooltip">Instagram</span>
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/51962164599?text=Hola%20MDO%20Dental%20Training%20Center" target="_blank" class="social-card whatsapp">
+          <span class="tooltip">WhatsApp</span>
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="progress">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <h1>Encuesta de satisfacción</h1>
+    <div class="subtitle">Escala de 0 a 10</div>
+
+    <div class="question" id="questionText"></div>
+    <div class="scale" id="scale"></div>
+    <div id="value">Seleccionado: -</div>
+    <div class="question" id="textQuestion"></div>
+<div class="text-line">
+  <textarea id="textAnswer" rows="1" placeholder="Escriba su respuesta..."></textarea>
+</div>
+    <button class="send-btn" id="nextBtn">
+  <span>Siguiente</span>
+</button>
+  </div>
+</div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
